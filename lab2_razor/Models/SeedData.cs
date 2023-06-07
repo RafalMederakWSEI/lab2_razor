@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using lab2_razor.Data;
 using System.ComponentModel.DataAnnotations;
 using lab2_razor.Pages.Models;
+using System.Globalization;
+using System;
 
 namespace lab2_razor.Models;
 
@@ -31,7 +33,6 @@ public static class SeedData
                     Title = "Next Post",
                     Description = "This is description of the new post",
                     Author = "Rafaello Buanito",
-                    PublicDate = DateTime.Parse("2023-06.04").ToString(),
                 },
 
                 new Post
@@ -39,7 +40,6 @@ public static class SeedData
                     Title = "Next Post Again",
                     Description = "This is description of the new post",
                     Author = "Rafaello Buanito",
-                    PublicDate = DateTime.Parse("2023-06.04").ToString(),
                 },
 
                 new Post
@@ -47,7 +47,6 @@ public static class SeedData
                     Title = "Next Post and Again",
                     Description = "This is description of the new post",
                     Author = "Rafaello Buanito",
-                    PublicDate = DateTime.Parse("2023-06.04").ToString(),
                 },
 
                 new Post
@@ -55,7 +54,6 @@ public static class SeedData
                     Title = "Next Post Masterpiece",
                     Description = "This is description of the new post",
                     Author = "Rafaello Buanito",
-                    PublicDate = DateTime.Parse("2023-06.04").ToString(),
                 }
             );
             context.SaveChanges();
