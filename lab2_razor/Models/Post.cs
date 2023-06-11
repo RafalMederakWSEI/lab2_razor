@@ -16,7 +16,7 @@ namespace lab2_razor.Pages.Models
 
         [StringLength(60, MinimumLength = 3)]
         [Required]
-        [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "You can only use letters.")]
+        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$", ErrorMessage = "You can only use letters")]
         public string? Author { get; set; }
     }
 }
