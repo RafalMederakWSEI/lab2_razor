@@ -5,16 +5,20 @@
     ViewData["Title"] = "Index";
 }
 
+<head>
+<link href="./css/home.css" rel="stylesheet" type="text/css" />
+</head>
+
 <h1>Index</h1>
 
-<p>
+<p class="home__create">
     <a asp-page="Create">Create New</a>
 </p>
 
-<form>
+<form class="home__search">
     <p>
         Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
+        <input class="home__filter__button" type="submit" value="Filter" />
     </p>
 </form>
 

@@ -1,0 +1,40 @@
+﻿.home__create {
+    border: 1px solid green;
+    padding: 4px 20px;
+    width: 160px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.home__create:hover {
+    background-color: green;
+}
+
+.home__create:hover a {
+    color: white;
+}
+
+.home__create a {
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+}
+
+.home__search input {
+    margin-left: 6px;
+    margin-right: 20px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.home__filter__button {
+    background: blue;
+    padding: 4px 20px;
+    width: 160px;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+}
